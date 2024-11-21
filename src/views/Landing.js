@@ -14,7 +14,7 @@ export default function Landing() {
               className="text-white text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap "
               to="/"
             >
-              EIB Consult
+              Inowa Consult
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -101,26 +101,33 @@ export default function Landing() {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-9/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">
-                    We help organizations thrive in complexity
+                  <h1 className="text-white font-semibold text-5xl mb-10">
+                  Your Gateway to Global Success
                   </h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis  sed
-                    quia non numquam eius modi tempora incidunt ut labore et
-                    dolore magnam aliquanem ullam
+                  <p className="mt-4 text-lg text-blueGray-200 mb-10">
+                  Connecting Businesses Across Borders with Strategic Insights and Local Expertise
                   </p>
 
-                  <h1 className="text-white font-semibold text-5xl mt-4">
-                    Your story starts with us.
-                  </h1>
+
+                  <div className="mt-5">
+
+                  <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Explore Our Services</button>
+                  <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Contact Us</button>
+
+                
+                  </div>
+
+
+
+                  <p className="text-white text-base mt-5">Inowa Consult provides businesses with the tools and expertise necessary to achieve international success. We specialize in connecting foreign producers with local importers, offering tailored consulting solutions that address the complexities of cross-border operations. Our services are designed to help businesses navigate regulatory challenges, establish strategic partnerships, and optimize supply chains, ensuring seamless entry into new markets</p>
+
+         
                 </div>
               </div>
             </div>
           </div>
           <div
-            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+            className="top-auto b;ottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
             style={{ transform: "translateZ(0)" }}
           >
             <svg
@@ -139,6 +146,12 @@ export default function Landing() {
             </svg>
           </div>
         </div>
+
+        
+
+
+   
+
 
         <section className="pb-20 bg-blueGray-200 -mt-24">
           <div className="container mx-auto px-4">
