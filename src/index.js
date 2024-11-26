@@ -13,9 +13,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/landing" element={<Landing />} />
+      <Route path="/" element={<Landing />} />
 
-      <Route path="*" element={<Navigate to="/landing" />} />
+    
    
     </Routes>
   </BrowserRouter>
