@@ -26,62 +26,75 @@ export default function Landing() {
               <i className="text-white fas fa-bars"></i>
             </button>
           </div>
+
           <div
-            className={
-              "lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none" +
-              (navbarOpen ? " block rounded shadow-lg" : " hidden")
-            }
-            id="example-navbar-warning"
-          >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="flex items-center">{/* <PagesDropdown /> */}</li>
+  className={
+    "lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none" +
+    (navbarOpen ? " block rounded shadow-lg" : " hidden")
+  }
+  id="example-navbar-warning"
+>
+  <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+    <li className="flex items-center">
+      {/* <PagesDropdown /> */}
+    </li>
 
-              <li className="flex items-center">
-                <button
-                  className="text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                  type="button"
-                >
-                  Home
-                </button>
+    <li className="flex items-center">
+      <button
+        className="text-black lg:text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+        type="button"
+      >
+        Home
+      </button>
+    </li>
 
-                <li className="flex items-center">
-                  <button
-                    className="text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    About us
-                  </button>
-                </li>
+    <li className="flex items-center">
+      <button
+        className="text-black lg:text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+        type="button"
+      >
+        About Us
+      </button>
+    </li>
 
-                <li className="flex items-center">
-                  <button
-                    className="text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    Services
-                  </button>
-                </li>
+    <li className="flex items-center">
+      <button
+        className="text-black lg:text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+        type="button"
+      >
+        Services
+      </button>
+    </li>
 
-                <li className="flex items-center">
-                  <button
-                    className="text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    The Team
-                  </button>
-                </li>
+    <li className="flex items-center">
+      <button
+        className="text-black lg:text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+        type="button"
+      >
+        Case Studies
+      </button>
+    </li>
 
-                <li className="flex items-center">
-                  <button
-                    className="text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    Contact Us
-                  </button>
-                </li>
-              </li>
-            </ul>
-          </div>
+    <li className="flex items-center">
+      <button
+        className="text-black lg:text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+        type="button"
+      >
+        Testimonials
+      </button>
+    </li>
+
+    <li className="flex items-center">
+      <button
+        className="text-black lg:text-white active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+        type="button"
+      >
+        Contact Us
+      </button>
+    </li>
+  </ul>
+</div>
+
         </div>
       </nav>
 
