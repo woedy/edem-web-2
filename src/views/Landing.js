@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBox, faIndustry, faLaptop, faHospital, faQuoteLeft, faBoxes, faLaptopCode, faGlobe, faHandshake, faCogs, faPhone, faMapMarkerAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Landing() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -102,55 +104,83 @@ export default function Landing() {
               <div className="w-full lg:w-9/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
                   <h1 className="text-white font-semibold text-5xl mb-10">
-                  Your Gateway to Global Success
+                    Your Gateway to Global Success
                   </h1>
                   <p className="mt-4 text-lg text-blueGray-200 mb-10">
-                  Connecting Businesses Across Borders with Strategic Insights and Local Expertise
+                    Connecting Businesses Across Borders with Strategic Insights and Local Expertise
                   </p>
 
 
                   <div className="mt-5">
 
-                  <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Explore Our Services</button>
-                  <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Contact Us</button>
+                    <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Explore Our Services</button>
+                    <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Contact Us</button>
 
-                
+
                   </div>
 
 
 
                   <p className="text-white text-base mt-5">Inowa Consult provides businesses with the tools and expertise necessary to achieve international success. We specialize in connecting foreign producers with local importers, offering tailored consulting solutions that address the complexities of cross-border operations. Our services are designed to help businesses navigate regulatory challenges, establish strategic partnerships, and optimize supply chains, ensuring seamless entry into new markets</p>
 
-         
+
                 </div>
               </div>
             </div>
           </div>
-          <div
-            className="top-auto b;ottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-            style={{ transform: "translateZ(0)" }}
-          >
-            <svg
-              className="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                className="text-blueGray-200 fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
+
         </div>
 
-        
 
 
-   
+        <section className="py-16 px-4 bg-gray-100">
+          <div className="container mx-auto space-y-12">
+            {/* Our Story */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
+                <p className="text-lg text-gray-600">
+                  “Inowa Consult was established with a commitment to facilitate smooth and successful international business ventures. With a strong presence in both emerging and established markets, we focus on providing comprehensive solutions that address the unique challenges of global trade. Our approach combines industry expertise, market knowledge, and a deep understanding of local contexts to deliver results-driven strategies.”
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Our Story"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+
+            {/* Our Mission */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Our Mission"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+
+
+
+              <div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                <p className="text-lg text-gray-600">
+                  “Our mission is to empower businesses to achieve sustainable growth beyond borders through personalized, data-driven, and culturally informed consulting services.”
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+        <section className="pb-20 bg-blueGray-200">
+          <h2 className="text-3xl font-bold text-center text-gray-800 pt-20 mb-20">Our Values</h2>
+
+
+        </section>
+
 
 
         <section className="pb-20 bg-blueGray-200 -mt-24">
@@ -163,12 +193,10 @@ export default function Landing() {
                       <i className="fas fa-award"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      Management Consultancy
+                      Integrity
                     </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                       sed quia non numquam eius modi tempora incidunt ut labore
-                      et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-                      minima veniam,
+                      We prioritize transparency and ethical practices in every aspect of our work.
                     </p>
                   </div>
                 </div>
@@ -181,12 +209,10 @@ export default function Landing() {
                       <i className="fas fa-retweet"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      Project Management
+                      Innovation
                     </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      sed quia non numquam eius modi tempora incidunt ut labore
-                      et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-                      minima veniam,
+                      We continuously adapt to industry trends to provide forward-thinking solutions.
                     </p>
                   </div>
                 </div>
@@ -199,12 +225,10 @@ export default function Landing() {
                       <i className="fas fa-fingerprint"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      Research and Feasibility Studies
+                      Client-Centricity
                     </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      sed quia non numquam eius modi tempora incidunt ut labore
-                      et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-                      minima veniam,
+                      Our clients’ success is at the core of everything we do, and we tailor our approach to meet their unique objectives.
                     </p>
                   </div>
                 </div>
@@ -217,21 +241,15 @@ export default function Landing() {
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Working with us is a pleasure
+                  Leadership
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                  Sed quia non numquam eius modi tempora incidunt ut labore et
-                  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                  veniam.
+                  The leadership team at Inowa Consult comprises seasoned professionals with extensive experience in international trade, business strategy, and supply chain management.
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
-                  Sed quia non numquam eius modi tempora incidunt ut labore et
-                  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                  veniam.
+                  Each member brings a unique perspective and expertise, ensuring that our clients receive the highest standard of service.
                 </p>
-                <Link to="/" className="font-bold text-blueGray-700 mt-8">
-                  Read More
-                </Link>
+
               </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -254,12 +272,10 @@ export default function Landing() {
                       ></polygon>
                     </svg>
                     <h4 className="text-xl font-bold text-white">
-                      Top Notch Services
+                      Your Gateway to Global Success
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
+                      Connecting Businesses Across Borders with Strategic Insights and Local Expertise.
                     </p>
                   </blockquote>
                 </div>
@@ -267,6 +283,170 @@ export default function Landing() {
             </div>
           </div>
         </section>
+
+
+
+        <section className="py-16 px-4 bg-gray-100">
+          <div className="container mx-auto text-center space-y-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              At Inowa Consult, we offer a range of strategic services designed to help businesses succeed in the global market.
+            </p>
+
+            {/* Services Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Service 1: Market Entry and Expansion */}
+              <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Market Entry"
+                    className="mx-auto mb-4 rounded-full"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Market Entry and Expansion</h3>
+                </div>
+                <p className="text-gray-600">
+                  Inowa Consult assists businesses in developing strategic market entry plans, considering regulatory requirements, competitive landscapes, and local market dynamics. We ensure a seamless transition into new markets.
+                </p>
+              </div>
+
+              {/* Service 2: Trade Compliance and Regulatory Consulting */}
+              <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Trade Compliance"
+                    className="mx-auto mb-4 rounded-full"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Trade Compliance and Regulatory Consulting</h3>
+                </div>
+                <p className="text-gray-600">
+                  Compliance with international trade regulations is vital. Our team provides in-depth guidance on navigating complex regulatory frameworks, ensuring your business stays compliant while minimizing risks.
+                </p>
+              </div>
+
+              {/* Service 3: Supply Chain Optimization */}
+              <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Supply Chain Optimization"
+                    className="mx-auto mb-4 rounded-full"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Supply Chain Optimization</h3>
+                </div>
+                <p className="text-gray-600">
+                  We help businesses design and implement optimized supply chain strategies to reduce costs and ensure timely delivery of products to target markets, increasing operational success.
+                </p>
+              </div>
+
+              {/* Service 4: Cross-Border Partnerships */}
+              <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Cross-Border Partnerships"
+                    className="mx-auto mb-4 rounded-full"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Cross-Border Partnerships</h3>
+                </div>
+                <p className="text-gray-600">
+                  We facilitate strategic partnerships between international producers and local businesses, identifying reliable importers and fostering long-term alliances.
+                </p>
+              </div>
+
+              {/* Service 5: Customized Business Solutions */}
+              <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Customized Solutions"
+                    className="mx-auto mb-4 rounded-full"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Customized Business Solutions</h3>
+                </div>
+                <p className="text-gray-600">
+                  We offer bespoke consulting solutions that address specific challenges. Our tailored approach ensures effective strategies that align with your business goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="container mx-auto text-center space-y-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Industries We Serve</h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              Inowa Consult provides specialized services to a diverse range of industries, addressing each sector’s unique challenges with tailored strategies. Our areas of expertise include:
+            </p>
+
+            {/* Industries Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+              {/* Industry 1: Consumer Goods */}
+              <div className="bg-blue-100 p-6 rounded-lg shadow-lg hover:bg-blue-200 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <FontAwesomeIcon
+                    icon={faBox}
+                    className="text-4xl text-blue-600 mx-auto mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Consumer Goods</h3>
+                </div>
+                <p className="text-gray-600">
+                  Supporting businesses in expanding their reach and establishing a presence in new markets.
+                </p>
+              </div>
+
+              {/* Industry 2: Manufacturing */}
+              <div className="bg-green-100 p-6 rounded-lg shadow-lg hover:bg-green-200 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <FontAwesomeIcon
+                    icon={faIndustry}
+                    className="text-4xl text-green-600 mx-auto mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Manufacturing</h3>
+                </div>
+                <p className="text-gray-600">
+                  Enhancing operational efficiency and identifying opportunities for cost savings.
+                </p>
+              </div>
+
+              {/* Industry 3: Technology */}
+              <div className="bg-purple-100 p-6 rounded-lg shadow-lg hover:bg-purple-200 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <FontAwesomeIcon
+                    icon={faLaptop}
+                    className="text-4xl text-purple-600 mx-auto mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Technology</h3>
+                </div>
+                <p className="text-gray-600">
+                  Assisting technology companies in navigating complex compliance requirements and market dynamics.
+                </p>
+              </div>
+
+              {/* Industry 4: Healthcare */}
+              <div className="bg-red-100 p-6 rounded-lg shadow-lg hover:bg-red-200 transition duration-300 ease-in-out">
+                <div className="mb-6">
+                  <FontAwesomeIcon
+                    icon={faHospital}
+                    className="text-4xl text-red-600 mx-auto mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Healthcare</h3>
+                </div>
+                <p className="text-gray-600">
+                  Guiding healthcare providers through regulatory frameworks and market entry challenges.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
 
         <section className="relative py-20">
           <div
@@ -299,142 +479,199 @@ export default function Landing() {
                 />
               </div>
 
-              <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div className="w-full md:w-5/12 ml-auto mr-auto px-4 ">
                 <div className="md:pr-12">
-                  <div className="text-lightBlue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300">
+                  <div className="text-lightBlue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 mt-6 shadow-lg rounded-full bg-lightBlue-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">Working Together</h3>
+                  <h3 className="text-3xl font-semibold">Global Reach</h3>
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    Sed quia non numquam eius modi tempora incidunt ut labore et
-                    dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam,
+                    Inowa Consult operates with a global perspective, leveraging on-the-ground expertise in key markets across Asia, Europe, and Africa.
                   </p>
-                  <ul className="list-none mt-6">
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="fas fa-fingerprint"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-blueGray-500">
-                            Reliable Service
-                          </h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="fab fa-html5"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-blueGray-500">
-                            Amazing Delivery
-                          </h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="far fa-paper-plane"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-blueGray-500">Dynamic</h4>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+
+                  <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+                    Our ability to blend international insights with local knowledge enables us to deliver solutions that are both comprehensive and highly relevant to our clients’ needs.”
+
+                  </p>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="pt-20 pb-48">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center text-center mb-24">
-              <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">
-                  We’re fortunate to work with the best
-                </h2>
-                <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                  Sed quia non numquam eius modi tempora incidunt ut labore et
-                  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                  veniam.
+
+
+
+        <section className="py-16 px-4 bg-blueGray-200">
+          <div className="container mx-auto text-center space-y-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Case Studies</h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              Discover how Inowa Consult has helped businesses achieve success in new markets through strategic guidance and effective partnerships.
+            </p>
+
+            {/* Case Studies Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+              {/* Case Study 1: Toy Manufacturer in Ghana */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+                <div className="mb-6">
+                  <FontAwesomeIcon
+                    icon={faBoxes}
+                    className="text-4xl text-blue-600 mx-auto mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Facilitating Market Entry for a Toy Manufacturer in Ghana</h3>
+                </div>
+                <p className="text-gray-600">
+                  Inowa Consult successfully facilitated a partnership between Molto, a Spanish toy manufacturer, and Orca Deco, a leading retailer in Ghana. Through meticulous market analysis and regulatory guidance, we enabled Molto to establish a strong presence in the West African market.
                 </p>
               </div>
-            </div>
-            <div className="flex flex-wrap">
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <div className="pt-6 text-center">
-                    <div className="mt-6">
-                      <button
-                        className="bg-lightBlue-400 text-white w-20 h-20 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                    </div>
-                  </div>
+
+              {/* Case Study 2: Technology Company in Southeast Asia */}
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+                <div className="mb-6">
+                  <FontAwesomeIcon
+                    icon={faLaptopCode}
+                    className="text-4xl text-purple-600 mx-auto mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Supporting a Technology Company’s Expansion into Southeast Asia</h3>
                 </div>
+                <p className="text-gray-600">
+                  Our team collaborated with a U.S.-based technology firm to navigate the complexities of entering Southeast Asian markets. By addressing regulatory challenges, securing local partnerships, and streamlining logistics, we ensured a successful market entry for the client.
+                </p>
               </div>
 
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <div className="pt-6 text-center">
-                    <div className="mt-6">
-                      <button
-                        className="bg-lightBlue-400 text-white w-20 h-20 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <div className="pt-6 text-center">
-                    <div className="mt-6">
-                      <button
-                        className="bg-lightBlue-400 text-white w-20 h-20 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <div className="pt-6 text-center">
-                    <div className="mt-6">
-                      <button
-                        className="bg-lightBlue-400 text-white w-20 h-20 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
+
+
+
+        <section className="py-16 px-4 bg-gray-50">
+      <div className="container mx-auto text-center space-y-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+          See how Inowa Consult has made a positive impact on businesses by helping them expand internationally and navigate complex markets.
+        </p>
+
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {/* Testimonial 1 */}
+          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-16 h-16 rounded-full bg-gray-300 mr-4"></div> {/* Avatar */}
+              <div>
+                <h3 className="font-semibold text-lg text-gray-800">Client Name</h3>
+                <p className="text-gray-500">Title, Company Name</p>
+              </div>
+            </div>
+            <div className="relative">
+              <FontAwesomeIcon
+                icon={faQuoteLeft}
+                className="text-gray-400 absolute top-4 left-4 transform text-6xl"
+              />
+              <p className="text-gray-600 italic pl-12">
+                "Inowa Consult has been instrumental in helping us expand internationally. Their expertise and attention to detail ensured a smooth transition into new markets."
+              </p>
+            </div>
+          </div>
+
+          {/* Testimonial 2 */}
+          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-16 h-16 rounded-full bg-gray-300 mr-4"></div> {/* Avatar */}
+              <div>
+                <h3 className="font-semibold text-lg text-gray-800">Client Name</h3>
+                <p className="text-gray-500">Title, Company Name</p>
+              </div>
+            </div>
+            <div className="relative">
+              <FontAwesomeIcon
+                icon={faQuoteLeft}
+                className="text-gray-400 absolute top-4 left-4 transform text-6xl"
+              />
+              <p className="text-gray-600 italic pl-12">
+                "Thanks to Inowa Consult, our business was able to overcome significant regulatory hurdles. Their tailored approach and strategic insights have been invaluable."
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section className="py-16 px-4 bg-gray-50">
+      <div className="container mx-auto text-center space-y-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Insights and Resources</h2>
+        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+          Stay informed with the latest insights, strategies, and resources to navigate the global business landscape.
+        </p>
+
+        {/* Blog Titles Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          {/* Blog 1 */}
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center mb-4">
+              <FontAwesomeIcon 
+                icon={faGlobe} 
+                className="text-blue-500 text-3xl mr-4"
+              />
+              <h3 className="font-semibold text-xl text-gray-800">Navigating Trade Compliance in Emerging Markets</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Understanding trade compliance is crucial when entering new and emerging markets. In this blog, we explore the key steps to ensure your business stays compliant and avoids regulatory pitfalls.
+            </p>
+            <a href="#" className="text-blue-600 font-semibold hover:underline">Read More</a>
+          </div>
+
+          {/* Blog 2 */}
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center mb-4">
+              <FontAwesomeIcon 
+                icon={faHandshake} 
+                className="text-green-500 text-3xl mr-4"
+              />
+              <h3 className="font-semibold text-xl text-gray-800">Five Key Strategies for Successful Market Entry</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Entering new markets can be challenging. Learn five essential strategies to help your business establish a strong foothold and gain a competitive edge.
+            </p>
+            <a href="#" className="text-green-600 font-semibold hover:underline">Read More</a>
+          </div>
+
+          {/* Blog 3 */}
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center mb-4">
+              <FontAwesomeIcon 
+                icon={faCogs} 
+                className="text-orange-500 text-3xl mr-4"
+              />
+              <h3 className="font-semibold text-xl text-gray-800">The Importance of Supply Chain Optimization in Global Trade</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Supply chain optimization is critical for efficiency and profitability in global trade. This blog post dives into best practices for streamlining your operations.
+            </p>
+            <a href="#" className="text-orange-600 font-semibold hover:underline">Read More</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    
 
         <section className="pb-20 relative block bg-blueGray-800">
           <div
@@ -457,61 +694,22 @@ export default function Landing() {
             </svg>
           </div>
 
-          <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div className="container mx-auto px-4 lg:pt-24 lg:pb-64 pb-16">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold text-white">
                   Get In Touch
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
-                  Put the potentially record low maximum sea ice extent tihs
-                  year down to low ice. According to the National Oceanic and
-                  Atmospheric Administration, Ted, Scambos.
+                Let us help you achieve your global business goals. Contact Inowa Consult today to schedule a consultation.
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap mt-12 justify-center">
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-medal text-xl"></i>
-                </div>
-                <h6 className="text-xl mt-5 font-semibold text-white">
-                  Excelent Services
-                </h6>
-                <p className="mt-2 mb-4 text-blueGray-400">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-poll text-xl"></i>
-                </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
-                  Grow your market
-                </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-lightbulb text-xl"></i>
-                </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
-                  Launch time
-                </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
+       
           </div>
         </section>
 
-        <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
+        <section className="relative block py-24 lg:pt-0 bg-blueGray-800 ">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
@@ -552,6 +750,34 @@ export default function Landing() {
                       />
                     </div>
 
+                    <div className="relative w-full mb-3 mt-8">
+                      <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="Phone"
+                      >
+                        Phone
+                      </label>
+                      <input
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        placeholder="Pone"
+                      />
+                    </div>
+
+                    <div className="relative w-full mb-3 mt-8">
+                      <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="company-name"
+                      >
+                        Company Name
+                      </label>
+                      <input
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        placeholder="Company Name"
+                      />
+                    </div>
+
                     <div className="relative w-full mb-3">
                       <label
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
@@ -579,6 +805,64 @@ export default function Landing() {
               </div>
             </div>
           </div>
+
+
+
+          <div className="py-16 px-4">
+      <div className="container mx-auto text-center space-y-12">
+        <h2 className="text-3xl font-bold text-white mb-4">Contact Information</h2>
+        <p className="text-lg text-white mb-8 max-w-3xl mx-auto">
+          We’d love to hear from you! Get in touch with us through any of the following ways.
+        </p>
+
+        {/* Contact Information Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {/* Email */}
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center mb-4">
+              <FontAwesomeIcon 
+                icon={faEnvelope} 
+                className="text-blue-500 text-3xl mr-4"
+              />
+              <h3 className="font-semibold text-lg text-gray-800">Email</h3>
+            </div>
+            <p className="text-gray-600">
+              <a href="mailto:info@inowaconsult.com" className="text-blue-600 hover:underline">info@inowaconsult.com</a>
+            </p>
+          </div>
+
+          {/* Phone */}
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center mb-4">
+              <FontAwesomeIcon 
+                icon={faPhone} 
+                className="text-green-500 text-3xl mr-4"
+              />
+              <h3 className="font-semibold text-lg text-gray-800">Phone</h3>
+            </div>
+            <p className="text-gray-600">
+              <a href="tel:+1234567890" className="text-green-600 hover:underline">+ [international dialing code] xxx-xxx-xxxx</a>
+            </p>
+          </div>
+
+          {/* Address */}
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="flex items-center mb-4">
+              <FontAwesomeIcon 
+                icon={faMapMarkerAlt} 
+                className="text-red-500 text-3xl mr-4"
+              />
+              <h3 className="font-semibold text-lg text-gray-800">Address</h3>
+            </div>
+            <p className="text-gray-600">
+              [Office Address, if applicable]
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
         </section>
       </main>
 
@@ -675,7 +959,23 @@ export default function Landing() {
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                         href="#"
                       >
-                        The Team
+                        Industries We Serve
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        href="#"
+                      >
+                        Case Studies
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                        href="#"
+                      >
+                   Testimonials
                       </a>
                     </li>
                     <li>
@@ -726,7 +1026,7 @@ export default function Landing() {
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-blueGray-500 font-semibold py-1">
-                Copyright © {new Date().getFullYear()} SamaLTE{" "}
+                Copyright © {new Date().getFullYear()} Inowa Consult. All Rights Reserved{" "}
                 <a
                   href="#"
                   className="text-blueGray-500 hover:text-blueGray-800"
