@@ -140,12 +140,12 @@ export default function Landing() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
                 <p className="text-lg text-gray-600">
-                  “Inowa Consult was established with a commitment to facilitate smooth and successful international business ventures. With a strong presence in both emerging and established markets, we focus on providing comprehensive solutions that address the unique challenges of global trade. Our approach combines industry expertise, market knowledge, and a deep understanding of local contexts to deliver results-driven strategies.”
+                  Inowa Consult was established with a commitment to facilitate smooth and successful international business ventures. With a strong presence in both emerging and established markets, we focus on providing comprehensive solutions that address the unique challenges of global trade. Our approach combines industry expertise, market knowledge, and a deep understanding of local contexts to deliver results-driven strategies.
                 </p>
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Our Story"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -156,7 +156,7 @@ export default function Landing() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Our Mission"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -167,7 +167,7 @@ export default function Landing() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
                 <p className="text-lg text-gray-600">
-                  “Our mission is to empower businesses to achieve sustainable growth beyond borders through personalized, data-driven, and culturally informed consulting services.”
+                  Our mission is to empower businesses to achieve sustainable growth beyond borders through personalized, data-driven, and culturally informed consulting services.
                 </p>
               </div>
 
@@ -299,7 +299,7 @@ export default function Landing() {
               <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
                 <div className="mb-6">
                   <img
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Market Entry"
                     className="mx-auto mb-4 rounded-full"
                   />
@@ -314,7 +314,7 @@ export default function Landing() {
               <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
                 <div className="mb-6">
                   <img
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://img.freepik.com/free-photo/businessman-with-planet-earth_1232-144.jpg?t=st=1732614593~exp=1732618193~hmac=93812ee0eef1dae21bb9005a9a842092b856abdf6c90bdf7326e8d41d5a189ea&w=1380"
                     alt="Trade Compliance"
                     className="mx-auto mb-4 rounded-full"
                   />
@@ -329,7 +329,7 @@ export default function Landing() {
               <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
                 <div className="mb-6">
                   <img
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://img.freepik.com/free-photo/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative_123827-24177.jpg?t=st=1732614786~exp=1732618386~hmac=a36162a14026c31cbea615b997cc902564d521502f08a7f78858bf5372853ecb&w=1380"
                     alt="Supply Chain Optimization"
                     className="mx-auto mb-4 rounded-full"
                   />
@@ -344,7 +344,7 @@ export default function Landing() {
               <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
                 <div className="mb-6">
                   <img
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://img.freepik.com/free-photo/stylish-black-couple-have-business-conversation_1157-32141.jpg?t=st=1732615056~exp=1732618656~hmac=fcc90db5cc482b062f63290ea0d1f6337a85ff4f88ea92a4cda06c830cc9eb03&w=1380"
                     alt="Cross-Border Partnerships"
                     className="mx-auto mb-4 rounded-full"
                   />
@@ -359,7 +359,7 @@ export default function Landing() {
               <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
                 <div className="mb-6">
                   <img
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://img.freepik.com/free-photo/high-angle-people-working-office_23-2149636256.jpg?t=st=1732615162~exp=1732618762~hmac=1a13296cddc6a9bcc388b88f70757f8beecd9b7f9b5865154c6df4d6f6e8d628&w=1380"
                     alt="Customized Solutions"
                     className="mx-auto mb-4 rounded-full"
                   />
@@ -475,7 +475,7 @@ export default function Landing() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://img.freepik.com/free-photo/high-angle-man-travel-agency-office_23-2150801481.jpg?t=st=1732615258~exp=1732618858~hmac=c1ab898b50bac95c007d0db19395b91ff9703ac82e9371dd8b5b931b27fcaf74&w=1380"
                 />
               </div>
 
@@ -490,7 +490,7 @@ export default function Landing() {
                   </p>
 
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    Our ability to blend international insights with local knowledge enables us to deliver solutions that are both comprehensive and highly relevant to our clients’ needs.”
+                    Our ability to blend international insights with local knowledge enables us to deliver solutions that are both comprehensive and highly relevant to our clients’ needs.
 
                   </p>
 
